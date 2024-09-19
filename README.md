@@ -27,12 +27,12 @@
 <hr>
 
 #### Features:
-<p style="text-align: justify;">The Rest API called here <b>TrelloRestApi</b> has for each set of service classes many endpoints of the most varied types of services available.</p> 
+<p style="text-align: justify; color:green">The Rest API called here <b>TrelloRestApi</b> has for each set of service classes many endpoints of the most varied types of services available.</p> 
 <p style="text-align: justify;">Combined with the service testing tool available in endpoint format called <b>Postman</b>, the Trello API Documentation is available with all the details not only of the endpoints, but also all of Trello's extra documentation.</p>
 <p style="text-align: justify;">Each set of <b>TrelloRestApi</b> service classes has many endpoints of the most varied types of services and are divided as follows:</p>
 
 - **Actions**
-- - [<b style="color: green;">GET</b>] Get an Action
+- - [<b><font color:"green">GET</font></b>] Get an Action
 - - [<b><font color="blue">PUT</font></b>] Update an Action
 - - [<b><font color="red">DEL</font></b>] Delete an Action
 - - [<b><font color="green">GET</font></b>] Get a specific field on an Action
