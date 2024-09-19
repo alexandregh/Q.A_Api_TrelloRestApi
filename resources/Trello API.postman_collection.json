@@ -1,0 +1,2121 @@
+{
+	"info": {
+		"_postman_id": "cc2c7c5a-de72-468f-a852-f7a48f540deb",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "451413",
+		"_collection_link": "https://winter-capsule-321273.postman.co/workspace/Deck-of-Cards-API~94b22621-6af6-4fde-abf5-1961b5cfc131/collection/451413-cc2c7c5a-de72-468f-a852-f7a48f540deb?action=share&source=collection_link&creator=451413"
+	},
+	"item": [
+		{
+			"name": "Boards",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get All Boards",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/members/me/boards?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"members",
+										"me",
+										"boards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a field on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/:field?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										":field"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "field",
+											"value": "url"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Actions of a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:boardId/?fields=&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":boardId",
+										""
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": ""
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "boardId",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a Card on a Board_",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/cards/:idCard/&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"cards",
+										":idCard",
+										"&key={{trelloKey}}&token={{trelloToken}}"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "idCard",
+											"value": "66e650164a893e52f1d75665"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get boardStars on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:boardId/boardStars?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":boardId",
+										"boardStars"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "boardId",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Checklists on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/checklists?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"checklists"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cards on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/cards?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get filtered Cards on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/cards/:filter?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"cards",
+										":filter"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "filter",
+											"value": "open"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Custom Fields for Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/customFields?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"customFields"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Labels on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/labels?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"labels"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Lists on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/lists?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"lists"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get filtered Lists on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/lists/:filter?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"lists",
+										":filter"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "filter",
+											"value": "all"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get the Members of a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/members?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"members"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Enabled Power-Ups on Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/boardPlugins?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"boardPlugins"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Power-Ups on a Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/plugins?key={{trelloKey}}&token={{trelloToken}}&filter=enabled",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"plugins"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										},
+										{
+											"key": "filter",
+											"value": "enabled"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete a Board",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e922913155fdedfd103c2b"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Member from Board",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/members/:idMember?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"members",
+										":idMember"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "idMember",
+											"value": "66e8858379b7e650970408ac"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Create a Board",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards?name=Learning Postman&key={{trelloKey}}&token={{trelloToken}}&prefs_background=purple",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Learning Postman"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										},
+										{
+											"key": "prefs_background",
+											"value": "purple"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a List on a Board",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/lists?name=DONE&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"lists"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "DONE"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e4d8a5be0728f0f44d0005"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a Label on a Board",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/labels?name=Label Teste&color=blue&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"labels"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Label Teste"
+										},
+										{
+											"key": "color",
+											"value": "blue"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a calendarKey for a Board_",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/calendarKey/generate?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"calendarKey",
+										"generate"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a emailKey for a Board",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/emailKey/generate?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"emailKey",
+										"generate"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a Tag for a Board_",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/idTags?value=null&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"idTags"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "null"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mark Board as viewed_",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/markedAsViewed?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"markedAsViewed"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id?key={{trelloKey}}&token={{trelloToken}}&name=Learning Postman",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										},
+										{
+											"key": "name",
+											"value": "Learning Postman"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add a Member to a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/members/:idMember?type=normal&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"members",
+										":idMember"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "normal"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "idMember",
+											"value": "asdfgh"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Invite Member to Board via email",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/members?email=ana.maria@bol.com.br&type=normal&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"members"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "ana.maria@bol.com.br"
+										},
+										{
+											"key": "type",
+											"value": "normal"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Membership of Member on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/memberships/:idMembership?type=normal&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"memberships",
+										":idMembership"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "normal"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "idMembership",
+											"value": "66e88ffde63eee783b8224ee"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update emailPosition Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/emailPosition?value=top&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"emailPosition"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "top"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update idEmailList Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/idEmailList?value=66e64f544ba18dcca4712e2e&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"idEmailList"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "66e64f544ba18dcca4712e2e"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update showListGuide Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/showListGuide?value=true&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"showListGuide"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "true"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update showSidebar Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/showSidebar?value=true&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"showSidebar"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "true"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update showSidebarActivity Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/showSidebarActivity?value=true&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"showSidebarActivity"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "true"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update showSidebarBoardActions Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/showSidebarBoardActions?value=true&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"showSidebarBoardActions"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "true"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update showSidebarMembers Pref on a Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/boards/:id/myPrefs/showSidebarMembers?value=true&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"boards",
+										":id",
+										"myPrefs",
+										"showSidebarMembers"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "true"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64e6409a341b89ecc5ba0"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Create a new List - TODO",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists?name=TODO&idBoard=66e64e6409a341b89ecc5ba0&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "TODO"
+										},
+										{
+											"key": "idBoard",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a new List - DONE",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists?name=DONE&idBoard=66e64e6409a341b89ecc5ba0&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "DONE"
+										},
+										{
+											"key": "idBoard",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Archive all Cards in List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/archiveAllCards?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"archiveAllCards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Move all Cards in List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/moveAllCards?idBoard=66e64e6409a341b89ecc5ba0&idList=66e64f544ba18dcca4712e2e&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"moveAllCards"
+									],
+									"query": [
+										{
+											"key": "idBoard",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "idList",
+											"value": "66e64f544ba18dcca4712e2e"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get a List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Actions for a List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/actions?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"actions"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get the Board a List is on",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/board?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"board"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64f544ba18dcca4712e2e"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cards in a List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/cards?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update a List",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Archive or unarchive a list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/closed?key={{trelloKey}}&token={{trelloToken}}&value=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"closed"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										},
+										{
+											"key": "value",
+											"value": "true"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Move List to Board",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/idBoard?value=66e64e6409a341b89ecc5ba0&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										"idBoard"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "66e64e6409a341b89ecc5ba0"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64f544ba18dcca4712e2e"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a field on a List",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/lists/:id/:field?value=DONYE&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"lists",
+										":id",
+										":field"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": "DONYE"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e64fa69260edd948088de8"
+										},
+										{
+											"key": "field",
+											"value": "name"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Card",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Create a new Card",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/cards?name=Sign-up for Trello&idList=66e64f544ba18dcca4712e2e&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"cards"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Sign-up for Trello"
+										},
+										{
+											"key": "idList",
+											"value": "66e64f544ba18dcca4712e2e"
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Update a Card - Move Card",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/cards/:id?key={{trelloKey}}&token={{trelloToken}}&idList=66e64fa69260edd948088de8",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"cards",
+										":id"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										},
+										{
+											"key": "idList",
+											"value": "66e64fa69260edd948088de8"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e650164a893e52f1d75665"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get the List of a Card",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/cards/:id/list?key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"cards",
+										":id",
+										"list"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e650164a893e52f1d75665"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a Card",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/1/cards/:id?&key={{trelloKey}}&token={{trelloToken}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"1",
+										"cards",
+										":id"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": null
+										},
+										{
+											"key": "key",
+											"value": "{{trelloKey}}"
+										},
+										{
+											"key": "token",
+											"value": "{{trelloToken}}"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "66e650164a893e52f1d75665"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.trello.com"
+		},
+		{
+			"key": "trelloToken",
+			"value": "trelloToken"
+		},
+		{
+			"key": "trelloKey",
+			"value": "trelloKey"
+		}
+	]
+}
