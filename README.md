@@ -32,7 +32,7 @@
 <p style="text-align: justify;">Each set of <b>TrelloRestApi</b> service classes has many endpoints of the most varied types of services and are divided as follows:</p>
 
 - **Actions**
-- - [<font color="green"><b>GET</b></font>] Get an Action
+- - [<b style="color: green;">GET</b>] Get an Action
 - - [<b><font color="blue">PUT</font></b>] Update an Action
 - - [<b><font color="red">DEL</font></b>] Delete an Action
 - - [<b><font color="green">GET</font></b>] Get a specific field on an Action
