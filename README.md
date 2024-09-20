@@ -318,12 +318,30 @@
 This project made in Postman was based on the following course:
 - https://www.udemy.com/course/postman-the-complete-guide/
 
+<hr>
+
+#### Documentations:
+
+Get Started Building On Trello
+- https://developer.atlassian.com/cloud/trello/
+
+Power-Up Admin Portal (Managing Power-Up)
+- https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/
+
+Generating an API key
+- https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/#generating-an-api-key
+
 The API Documentation is based on the following link:
 - https://developer.atlassian.com/cloud/trello/rest/api-group-actions/
 
 About Trello and API Keys:
 - https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/
 - https://trello.com/app-key
+
+<hr>
+
+#### Documentations:
+<p style="text-align: justify;">The tests with <b>Postman</b> carried out on the Trello application were only carried out on some endpoints. The objective is not to exhaustively test the Trello application but to serve as an example of running API tests in <b>Postman</b>.</p>
 
 <hr>
 
