@@ -340,8 +340,9 @@ About Trello and API Keys:
 
 <hr>
 
-#### Documentations:
+#### Observation:
 <p style="text-align: justify;">The tests with <b>Postman</b> carried out on the Trello application were only carried out on some endpoints. The objective is not to exhaustively test the Trello application but to serve as an example of running API tests in <b>Postman</b>.</p>
+<p style="text-align: justify;">Additionally, there may be more tests to be created and executed in <b>Postman</b> if relevant.</p>
 
 <hr>
 
